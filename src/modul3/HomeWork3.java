@@ -26,7 +26,6 @@ public class HomeWork3 {
 
         int[] arr = new int[length];
 
-
         while(true)
         {
             try {
@@ -55,17 +54,16 @@ public class HomeWork3 {
         System.out.println("Максимальне число масиву: "+ max);
         System.out.println("Мінімальне число масиву: "+ min);
 
-        int count = 0;
+        int countMax = 0;
         int num = 5;
-        for (int n:arr)
-            if (n == num) count++;
-        System.out.println("Число 5 повторяється " + count + " разів");
+        for (int n:arr) {
+            if (n == num) countMax++;
+        }
+        System.out.println("Число 5 повторяється " + countMax + " разів");
 
         Arrays.sort(arr);
         for(int a : arr){
             System.out.println(a);
         }
-
-
     }
 }
