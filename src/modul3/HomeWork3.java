@@ -55,11 +55,17 @@ public class HomeWork3 {
         System.out.println("Максимальне число масиву: "+ max);
         System.out.println("Мінімальне число масиву: "+ min);
 
-        Arrays.sort(arr);
+        int count = 0;
+        int num = 5;
+        for (int n:arr)
+            if (n == num) count++;
+        System.out.println("Число 5 повторяється " + count + " разів");
 
+        Arrays.sort(arr);
         for(int a : arr){
             System.out.println(a);
         }
+
 
     }
 }
