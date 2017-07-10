@@ -1,4 +1,5 @@
 package modul3;
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -25,7 +26,6 @@ public class HomeWork3 {
 
         int[] arr = new int[length];
 
-        //System.out.println("довжина масиву " + arr.length);
 
         while(true)
         {
@@ -55,6 +55,11 @@ public class HomeWork3 {
         System.out.println("Максимальне число масиву: "+ max);
         System.out.println("Мінімальне число масиву: "+ min);
 
+        Arrays.sort(arr);
+
+        for(int a : arr){
+            System.out.println(a);
+        }
 
     }
 }
